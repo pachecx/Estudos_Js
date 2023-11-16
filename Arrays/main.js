@@ -175,4 +175,48 @@ console.log(somaInfinita(2, 5, 14, 45, 155))
 console.log(somaInfinita(289, 5, 144, 45, 155))
 console.log(somaInfinita(286649, 4645, 16644, 4465, 3615585))
 
+//For of
+const somaInfinita2 = (...args2)=>{
+    let total2 = 0;
 
+    for (nu of args2){
+        total2 += nu;
+    }
+
+    return total2;
+}
+console.log(somaInfinita2(1, 1, 5))
+console.log(somaInfinita2(21, 511, 957))
+console.log(somaInfinita2(41, 81, 58))
+
+//Destructuring em Objetos
+const userDetails = {
+    firstName: 'Matheus',
+    lastName: 'Pacheco',
+    job: 'Developer'
+} 
+
+console.log(userDetails.firstName)
+const {firstName, lastName, job} = userDetails //Criando variaveis para cada propriedade
+console.log(firstName, lastName, job)
+
+const {firstName: primeiroNome, lastName:ultimoNome, job: trampo } = userDetails //Renomear variaveis
+console.log(primeiroNome, ultimoNome, trampo)
+
+const buyCar = {
+    modelo: 'Atego',
+    marca: 'Mercedez',
+    ano: 2024
+}
+
+const {modelo, marca, ano} = buyCar //Criando variaveis para cada propriedade
+console.log(modelo, marca, ano)
+
+const { modelo: tipo, marca: fabricante, ano: fabricacao } = buyCar //Renomenado variaveis
+console.log(tipo, fabricante, fabricacao) 
+
+//Destructuring em Arrays
+const Ar = ['A', 'B', 'C', 'D', 'E']
+console.log(Ar)
+const [intem1, intem2, intem3, intem4, intem5] = Ar
+console.log(intem1, intem2, intem3, intem4, intem5)
