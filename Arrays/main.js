@@ -249,3 +249,27 @@ console.log(typeof person)
 console.log(person.name)
 console.log(person.age)
 console.log(person.job)
+
+//Criando e Deletando
+
+const car = {
+    nome: 'hb20',
+    ano: 2016,
+    cor: 'branco'
+}
+
+car.porta = 4
+car.fabicante = 'hyunday'
+car.cambio = 5
+car.dono = 'Matheus'
+
+console.log(car)
+
+delete  car.nome
+delete car.cambio
+delete car.ano
+
+console.log(car)
+console.log(car instanceof Number)
+console.log(car instanceof Object)
+console.log(car instanceof String)
