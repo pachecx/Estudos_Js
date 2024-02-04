@@ -96,3 +96,63 @@ if(velocimetro > 80){
 }else{
     console.log('Esta abaixo da velocidade permitida, não foi multado!')
 }
+
+//06
+let userIdade = 30;
+let cnh = false;
+
+if(userIdade >= 18 && cnh == false){
+    console.log('É maior de 18 e não possui CNH!')
+}
+
+else if(userIdade >= 18 && cnh == true){
+    console.log('É maior de 18 e possui CNH!')
+}
+
+else{
+    console.log('É menor de idade e não possui CNH!')
+}
+
+//07
+let i = 0;
+
+while (i <= 10) {
+    console.log(i)
+    i++
+}
+
+//08
+for(let i = 100; i >= 50; i--){
+    console.log(i)
+}
+
+//09
+for(let i = 0; i <= 50; i++){
+    if(i % 2 == 0){
+        console.log(`Esse numero é par: ${i}`)
+    }else if(i % 2 != 0){
+        console.log(`Esse numero é impar: ${i} `)
+    }
+}
+
+//10
+// let primo = 2;
+
+// if(primo % 2 != 0 && primo % 3 != 0){
+//     console.log(`${primo}, é um numero primo!`)
+// }else{
+//     console.log(`${primo}, não é um numero primo!`)
+// }
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+const semPares = []
+
+for(let i = 0; i <= arr.length; i++){
+    if(i % 2 !=0){
+        let semPares = i;
+        
+    }
+}
+
+
+console.log(semPares)
