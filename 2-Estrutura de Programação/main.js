@@ -144,15 +144,26 @@ for(let i = 0; i <= 50; i++){
 //     console.log(`${primo}, não é um numero primo!`)
 // }
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8]
-const semPares = []
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+const semPares = [];
 
 for(let i = 0; i <= arr.length; i++){
     if(i % 2 !=0){
-        let semPares = i;
-        
+        semPares.push(i)
     }
 }
 
+console.log(semPares)   
 
-console.log(semPares)
+
+function classificarNumero(classs){
+    if(classs > 0 && classs % 2 == 0){
+        return "Positivo e Par";
+    }else if(classs > 0 && classs % 2 != 0){
+        return "Positivo e Ímpar";
+    }else if(classs < 0){
+        return "Negativo";
+    }else{return "Neutro";}
+}
+
+console.log(classificarNumero(1))
