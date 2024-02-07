@@ -222,54 +222,54 @@
 // console.log(intem1, intem2, intem3, intem4, intem5)
 
 //Propriedades
-const ar = [1, 2, 3, 4]
-console.log(ar, ar.length)
-console.log(ar[1])
-console.log(ar[11])
+// const ar = [1, 2, 3, 4]
+// console.log(ar, ar.length)
+// console.log(ar[1])
+// console.log(ar[11])
 
-const num = [5, 6, 7, 8]
+// const num = [5, 6, 7, 8]
 
-console.log( all = ar.concat(num)) //concat vai juntar os dois arrays
+// console.log( all = ar.concat(num)) //concat vai juntar os dois arrays
  
-const text = 'algum texto';
+// const text = 'algum texto';
 
-console.log(text.indexOf('a')) //Encontra a posição de um caractere
-console.log(text.indexOf('l')) 
-console.log(text.indexOf('g')) 
+// console.log(text.indexOf('a')) //Encontra a posição de um caractere
+// console.log(text.indexOf('l')) 
+// console.log(text.indexOf('g')) 
 
-//OBJETOS
-const person = {
-    name: 'matheus',
-    age: 29,
-    job: 'developer'
-}
+// //OBJETOS
+// const person = {
+//     name: 'matheus',
+//     age: 29,
+//     job: 'developer'
+// }
 
-console.log(person)
-console.log(typeof person)
-console.log(person.name)
-console.log(person.age)
-console.log(person.job)
+// console.log(person)
+// console.log(typeof person)
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.job)
 
-//Criando e Deletando
+// //Criando e Deletando
 
-const car = {
-    nome: 'hb20',
-    ano: 2016,
-    cor: 'branco'
-}
+// const car = {
+//     nome: 'hb20',
+//     ano: 2016,
+//     cor: 'branco'
+// }
 
-car.porta = 4
-car.fabicante = 'hyunday'
-car.cambio = 5
-car.dono = 'Matheus'
+// car.porta = 4
+// car.fabicante = 'hyunday'
+// car.cambio = 5
+// car.dono = 'Matheus'
 
-console.log(car)
+// console.log(car)
 
-delete  car.nome
-delete car.cambio
-delete car.ano
+// delete  car.nome
+// delete car.cambio
+// delete car.ano
 
-console.log(car)
-console.log(car instanceof Number)
-console.log(car instanceof Object)
-console.log(car instanceof String)
+// console.log(car)
+// console.log(car instanceof Number)
+// console.log(car instanceof Object)
+// console.log(car instanceof String)
