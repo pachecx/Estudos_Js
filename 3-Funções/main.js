@@ -174,4 +174,34 @@ console.log(potencia(3, 16));
 console.log(potencia(2, 20));
 
 //10
+function parLop(par){
+    for(let i = par; i >= 0; i--){
+        if(i % 2 == 0){
+            console.log(i)
+        }
+    }
+}
 
+parLop(20);
+
+//11
+function isPalindrome(palavra){
+    let pali = palavra.split("").reverse().join("");
+    
+   if(pali === palavra){
+    return true
+   }else{
+    return false
+   }
+
+}
+
+console.log(isPalindrome("radar"));
+
+//12
+function calculateAverage(values){
+    media = 
+    console.log(z1)
+}
+
+calculateAverage([1, 2, 3,4])
