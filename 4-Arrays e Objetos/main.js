@@ -332,5 +332,68 @@ console.log(nome.indexOf('s')); // Encontrar o indice
 console.log(nome.indexOf('m'));
 console.log(nome.indexOf('p'));
 
-console.log(nome.lastIndexOf('m'))
+console.log(nome.lastIndexOf('m'));
+
+//Slice
+let slice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(slice1);
+
+let slice2 = slice1.slice(1, 4);
+console.log(slice2);
+
+let testeSlice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let testeSlice2 = testeSlice1.slice(3)
+
+console.log(testeSlice2);
+
+//ForEach
+const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+
+nums.forEach(num => {
+    console.log(`Numero: ${num}`)
+});
+
+let nomes = ['Matheus', 'Maria', 'jose', 'Pedro', 'Isaias', 'Moises', 'Jaco']
+
+nomes.forEach(nome =>{
+    console.log(`O nome é: ${nome}.`)
+});
+
+let mostrar = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+mostrar.forEach(carro =>{
+    console.log(`Os carros são: ${carro}`)
+})
+
+//INCLUDES
+//Procurar um elemento no array
+
+let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+console.log(mostrarIncludes.includes("celta"));
+console.log(mostrarIncludes.includes("atego"));
+
+//REVERSE
+let testeReverse = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let mostrarReverse = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+
+console.log(testeReverse.reverse());
+console.log(mostrarReverse.reverse());
+
+//TRIM
+//REMOVER OS ESPAÇOS DA STRING
+let testeTrim = '         Matheus         Pacheco';
+console.log(testeTrim);
+
+console.log(testeTrim.trim());
+
+//PadSTART
+
+let testePad = '25';
+console.log(testePad.padStart(14, "0"));
+let testePad2 = '100';
+console.log(testePad2.padStart(5, "0"));
+let testePad3 = '99';
+console.log(testePad3.padStart(10, 0));
+
+//SPLIT
+let frase = 'O rato roeu a roupa do rei de roma';
 
