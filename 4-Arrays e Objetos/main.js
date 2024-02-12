@@ -273,3 +273,64 @@
 // console.log(car instanceof Number)
 // console.log(car instanceof Object)
 // console.log(car instanceof String)
+
+let object = {
+    name: 'teste1',
+    age: 25
+}
+let object2 = {
+    last: 'teste3',
+    job: "developer"
+}
+console.log(Object.assign(object, object2));
+
+let celular1 = {
+    chip: 1.8,
+    display: 'led'
+}
+
+let celular2 = {
+    bateria: 5000,
+    carregador: 120
+}
+console.log(Object.assign(celular1, celular2));
+
+let ar = ['a', 'b', 'c', 'd', 'e']
+for(let i = 0; i <= ar.length; i++){
+    console.log(ar[i])
+};
+
+let ar2 = [1, 2, 3, 4, 5]
+for(let i = 0; i <= ar.length; i++){
+    console.log(ar2[i])
+}
+
+let testePop = [22,33, 44, 55]
+console.log(testePop.pop()) //mostra apenas o elemento removido
+
+let tes = testePop;
+console.log(tes);
+
+let testePush = ['a', 'b', 'c', 'd'] //Adicionando ao final
+testePush.push(999);
+console.log(testePush);
+testePush.push(555, 23, 743, "ABC")
+console.log(testePush);
+
+//SHIFT E UNSHIFT
+
+let testeShift = [1, 2, 3]
+testeShift.shift()
+console.log(testeShift);
+
+testeShift.unshift(55, 66, 999)
+console.log(testeShift);
+
+//INDEXOF LASTiNDEXOF
+let nome = 'matheus'
+console.log(nome.indexOf('s')); // Encontrar o indice
+console.log(nome.indexOf('m'));
+console.log(nome.indexOf('p'));
+
+console.log(nome.lastIndexOf('m'))
+

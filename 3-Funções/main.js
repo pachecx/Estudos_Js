@@ -200,8 +200,25 @@ console.log(isPalindrome("radar"));
 
 //12
 function calculateAverage(values){
-    media = 
-    console.log(z1)
+    let soma = 0;
+
+    for(let i = 0; i <= values.length; i++){
+        soma += values[i]
+        console.log(soma)    
+    }
 }
 
-calculateAverage([1, 2, 3,4])
+calculateAverage([1, 2, 3])
+
+//13
+function reverseString (text1){
+    let tex = text1.split("").reverse().join("");
+    console.log(tex)
+}
+
+reverseString("texto");
+
+//14
+
+
+//15
