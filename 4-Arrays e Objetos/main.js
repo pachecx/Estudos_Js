@@ -386,7 +386,6 @@ console.log(testeTrim);
 console.log(testeTrim.trim());
 
 //PadSTART
-
 let testePad = '25';
 console.log(testePad.padStart(14, "0"));
 let testePad2 = '100';
@@ -396,4 +395,87 @@ console.log(testePad3.padStart(10, 0));
 
 //SPLIT
 let frase = 'O rato roeu a roupa do rei de roma';
+console.log(frase.split(" "))
+
+let name2 = 'Matheus';
+console.log(name2.split(''));
+
+//JOIN
+let testeJoin = ['M', 'a', 't', 'h', 'e', 'u', 's']
+console.log(testeJoin.join(""));
+
+//REPEAT
+let testeRepetir = 'Repetir ';
+
+console.log(testeRepetir.repeat(15));
+console.log(name2.repeat(10));
+
+//REST OPERATOR
+function restTeste(...args){
+    for(let i = 0; i <= args.length; i++){
+        console.log(args[i])
+    }
+}
+
+restTeste(10, 5, 15, 20);
+
+//Destruturing
+//Separar as propriedades em variaveis
+
+let car = {
+    nome: 'hb20',
+    motor: '1.0',
+    portas: '4'
+}
+console.log(car);
+
+const {nome: hb20, motor: vMotor, portas:vPortas} = car;
+console.log(hb20);
+console.log(vMotor);
+console.log(vPortas);
+
+let aluno = {
+    nome: 'Matheus',
+    idade: 29,
+    job: 'developer'
+}
+
+console.log(aluno);
+
+const {nome: matheus, idade: vIdade, job: developer } = aluno;
+console.log(matheus);
+console.log(vIdade);
+console.log(developer);
+
+let got = {
+    nome: 'godOfWar',
+    ano: 2018,
+    plataforma: 'ps5'
+}
+console.log(got);
+
+const {nome: godOfWar, ano: Vano, plataforma: ps5} = got;
+console.log(godOfWar);
+console.log(Vano);
+console.log(ps5);
+
+let desArray = ['a', 'b', 'c', 'd', 'e']
+console.log(desArray);
+
+const [letra1, letra2, letra3, letra4, letra5] = desArray;
+console.log(letra1);
+console.log(letra2);
+console.log(letra3);
+console.log(letra4);
+console.log(letra5);
+
+let persons = ['matheus', 'joao', 'pedro', 'moises'];
+console.log(persons);
+
+const [nome1, nome2, nome3, nome4] = persons;
+console.log(nome1);
+console.log(nome2);
+console.log(nome3);
+console.log(nome4);
+
 
