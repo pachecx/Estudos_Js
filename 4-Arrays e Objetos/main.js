@@ -367,6 +367,8 @@ mostrar.forEach(carro =>{
 //INCLUDES
 //Procurar um elemento no array
 
+//VAI RETORNAR TRUE OU FALSE
+
 let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
 console.log(mostrarIncludes.includes("celta"));
 console.log(mostrarIncludes.includes("atego"));
@@ -478,4 +480,93 @@ console.log(nome2);
 console.log(nome3);
 console.log(nome4);
 
+let games = ['God of War', 'GranTurismo', 'The last of Us']
+const [game1, game2, game3] = games
+console.log(game1);
+console.log(game2);
+console.log(game3);
 
+let gameObj = {
+    nome: 'theLastOfUs',
+    plataforma: 'ps5',
+    ano: 2013
+}
+
+const {nome: theLastOfUs, plataforma: Vrps5, ano: Vrano} = gameObj;
+console.log(theLastOfUs);
+console.log(Vrps5);
+console.log(Vrano);
+
+//Exercicios
+
+//01
+let arr1 = ['Manga', 'pera', 'banana', 'melão', 'melançia'];
+console.log(arr1[1]);
+console.log(arr1[3]);
+console.log(arr1[4]);
+
+//02
+let teste01 = [1, 2, 3];
+let teste02 = ['a', 'b', 'c', 'd'];
+
+console.log(teste01.length);
+console.log(teste02.length);
+
+//03
+let onibus = {
+    rodas: 8,
+    limite: 40,
+    portas: 2
+}
+
+console.log(onibus);
+
+console.log(onibus.rodas);
+console.log(onibus.limite);
+console.log(onibus.portas);
+
+//04
+onibus.janelas = 20;
+delete onibus.rodas;
+
+console.log(onibus.janelas);
+console.log(onibus.rodas); //deletado
+
+//05
+let meuNome = ['Matheus', 'Joao', 'Pedro'];
+
+// for(let i = 0; i <= meuNome.length; i++){
+//     if(meuNome[i] === 'Matheus'){
+//         console.log('Possui meu nome!')
+//         console.log(meuNome[i])
+//     }
+   
+// }
+
+// if(meuNome.includes('Matheus') === true){
+//     console.log('Possui')
+// }else{
+//     console.log('Não ')
+// }
+
+if(meuNome.includes('Matheus')){
+    console.log('Nome encontrado!')
+}else{
+    console.log('Nome não encontrado!')
+}
+
+//06
+let vitamina1 = ['maçã', 'banana', 'manga', 'uva', 'melancia', 'kiwi'];
+let vitamina2 = ['abacaxi', 'morango', 'pera'];
+
+function fazerVitamina(){
+    if(vitamina1.length < 5){
+        console.log('Poucos elementos')
+    }else{
+        console.log('Muitos elementos!')
+    }
+}
+
+fazerVitamina();
+
+//07
