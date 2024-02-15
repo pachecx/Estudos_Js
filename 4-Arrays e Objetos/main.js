@@ -497,6 +497,45 @@ console.log(theLastOfUs);
 console.log(Vrps5);
 console.log(Vrano);
 
+let json1 = {
+    "name": "Matheus",
+    "age": 29,
+    "job": "developer"
+}
+
+let pessoa = {
+    "game": "fifa",
+    "ano": 2007,
+    "tipo": "futebol"
+}
+
+let arJson = {
+    "marca": "lg",
+    "ano": 2024,
+    "modelo": "inverter"
+}
+
+let JsonString = JSON.stringify(json1);
+console.log(JsonString);
+
+let stringJson = JSON.parse(JsonString);
+console.log(stringJson);
+
+let obj3 = {
+    name: 'matheus',
+    age: 29,
+    job: 'developer',
+    wage: 10000
+}
+console.log(obj3)
+
+let {name: vname, age: age, job: job, wage: wage} = obj3
+console.log(vname);
+console.log(age);
+console.log(job);
+console.log(wage);
+
+
 //Exercicios
 
 //01
@@ -570,3 +609,23 @@ function fazerVitamina(){
 fazerVitamina();
 
 //07
+let testeloop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+for(let i = 0; i <= testeloop.length; i++){
+    console.log(testeloop[i])
+}
+
+//08
+let exJson = {
+    "name": "matheus",
+    "lastName": "pacheco cruz",
+    "age": 29
+}
+console.log(exJson.name);
+console.log(exJson.lastName);
+console.log(exJson.age);
+
+//09
+
+
+//10
