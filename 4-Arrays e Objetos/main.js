@@ -626,6 +626,67 @@ console.log(exJson.lastName);
 console.log(exJson.age);
 
 //09
+let text = 'Seja fiel a te mesmo';
+let text1 = text.split(" ");
 
+for(let i = 0; i <= text1.length; i++ ){
+    console.log(text1[i])
+}
 
 //10
+let cal = {
+    soma: function(num1, num2){
+        let result = num1 + num2
+        return result
+    },
+
+    sub: function(num1, num2){
+        let result = num1 - num2
+        return result
+    },
+
+    mult: function(num1, num2){
+        let result = num1 * num2
+        return result
+    },
+
+    div: function(num1, num2){
+        let result = num1 / num2
+        return result
+    }
+}
+
+console.log(cal.soma(5, 2));
+console.log(cal.sub(5, 2));
+console.log(cal.mult(5, 2));
+console.log(cal.div(5, 2));
+
+//11
+const arr2 = [1, 2, 3, 4]
+let qty = ['geleia', 'pamonha', 'milho', 'tofu']
+let el = qty.length;
+
+console.log(arr2.length);
+console.log(qty.length);
+console.log(el);
+
+//12
+const arr = []
+for(let i = 0; i < 5; i++){
+    arr.push(i + 5);
+}
+
+console.log(arr)
+
+//13
+function findMaxNumber(ar){
+    console.log(ar) 
+}
+
+findMaxNumber([10, 5, 10])
+
+//14
+
+//15
+
+
