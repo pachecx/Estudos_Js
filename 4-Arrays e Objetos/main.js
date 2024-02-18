@@ -679,13 +679,10 @@ for(let i = 0; i < 5; i++){
 console.log(arr)
 
 //13
-function findMaxNumber(ar){
-    console.log(ar) 
-}
 
-findMaxNumber([10, 5, 10])
 
 //14
+
 
 //15
 

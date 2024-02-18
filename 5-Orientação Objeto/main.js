@@ -103,3 +103,42 @@
 
 // const shark = new lobo(4, "Shark");
 // console.log(shark)
+
+//METODOS
+const dog = {
+    caramelo: function(){
+        console.log("Teste caramelo")
+    },
+    lobo: function(){
+        console.log("Teste lobo")
+    },
+    cleitinho: function(){
+        console.log("Teste cleitinho")
+    }
+}
+
+dog.caramelo();
+dog.lobo();
+dog.cleitinho();
+
+const car = {
+    nome: function(){
+        console.log("Hb20")
+    },
+    setCor: function(cor){
+        this.cor = cor;
+    }
+}
+
+car.nome();
+
+car.setCor("branco");
+console.log(car.cor);
+
+//PROTOTYPES
+
+const pessoa = {
+    mao: 2
+}
+
+console.log(Object.getPrototypeOf(pessoa));
