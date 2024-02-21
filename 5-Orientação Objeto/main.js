@@ -142,3 +142,19 @@ const pessoa = {
 }
 
 console.log(Object.getPrototypeOf(pessoa));
+
+//Classes
+const cachorro = {
+    patas: 4,
+    raca: "caramelo",
+    latir: function(){
+        console.log("UI UI")
+    }
+}
+
+let pitBull = Object.create(cachorro);
+
+pitBull.latir();
+pitBull.raca = "PitBull";
+
+console.log(pitBull.raca);
