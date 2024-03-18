@@ -104,69 +104,135 @@
 // const shark = new lobo(4, "Shark");
 // console.log(shark)
 
-//METODOS
-const dog = {
-    caramelo: function(){
-        console.log("Teste caramelo")
-    },
-    lobo: function(){
-        console.log("Teste lobo")
-    },
-    cleitinho: function(){
-        console.log("Teste cleitinho")
+// //METODOS
+// const dog = {
+//     caramelo: function(){
+//         console.log("Teste caramelo")
+//     },
+//     lobo: function(){
+//         console.log("Teste lobo")
+//     },
+//     cleitinho: function(){
+//         console.log("Teste cleitinho")
+//     }
+// }
+
+// dog.caramelo();
+// dog.lobo();
+// dog.cleitinho();
+
+// const car = {
+//     nome: function(){
+//         console.log("Hb20")
+//     },
+//     setCor: function(cor){
+//         this.cor = cor;
+//     }
+// }
+
+// car.nome();
+
+// car.setCor("branco");
+// console.log(car.cor);
+
+// //PROTOTYPES
+
+// const pessoa = {
+//     mao: 2
+// }
+
+// console.log(Object.getPrototypeOf(pessoa));
+
+// //Classes
+// const cachorro = {
+//     patas: 4,
+//     raca: "caramelo",
+//     latir: function(){
+//         console.log("UI UI")
+//     }
+// }
+
+// let pitBull = Object.create(cachorro);
+
+// pitBull.latir();
+// pitBull.raca = "PitBull";
+
+// console.log(pitBull.raca);
+
+// class Cachorro {
+//     constructor(raca, patas, cor){
+//         this.raca = raca;
+//         this.patas = patas;
+//         this.cor = cor;
+//     }
+// }
+
+// let labrador = new Cachorro('Labrador', 4, 'Amarelo')
+
+// console.log(labrador)
+
+const cachoorro = {
+    latir: function(){
+        console.log('auaua')
     }
 }
 
-dog.caramelo();
-dog.lobo();
-dog.cleitinho();
+cachoorro.latir();
 
-const car = {
-    nome: function(){
-        console.log("Hb20")
-    },
-    setCor: function(cor){
-        this.cor = cor;
-    }
-}
-
-car.nome();
-
-car.setCor("branco");
-console.log(car.cor);
-
-//PROTOTYPES
+//Prototypes
 
 const pessoa = {
-    mao: 2
+    maos: 2,
 }
 
 console.log(Object.getPrototypeOf(pessoa));
+console.log(Object.getPrototypeOf(pessoa) == Object.prototype);
+console.log(pessoa.hasOwnProperty('maos'));
+
+const pessoNova = Object.create(pessoa)
+console.log(pessoNova.maos)
+
+let dog = {
+    patas: 4,
+    raca: 'caramelo',
+    latir: ()=>{
+        console.log('auau')
+    }
+}
+
+console.log(dog)
+
+let labrador = Object.create(dog);
+
+labrador.latir();
+labrador.raca = 'labrador'
+
+console.log(labrador.patas);
+console.log(labrador.raca);
 
 //Classes
-const cachorro = {
-    patas: 4,
-    raca: "caramelo",
-    latir: function(){
-        console.log("UI UI")
+
+class Car{
+    constructor(motor, portas, pneus){
+        this.motor = motor;
+        this.portas = portas;
+        this.pneus = pneus;
+        this.ligar = function(){
+            console.log('Ligado')
+        }
     }
 }
 
-let pitBull = Object.create(cachorro);
+Car.prototype.bancos = 5;
 
-pitBull.latir();
-pitBull.raca = "PitBull";
+let truck = new Car("v12", 4, 6)
 
-console.log(pitBull.raca);
+console.log(truck);
+truck.ligar()
 
-class Cachorro {
-    constructor(raca, patas, cor){
-        this.raca = raca;
-        this.patas = patas;
-        this.cor = cor;
-    }
-}
+console.log(truck.bancos);
 
-let labrador = new Cachorro('Labrador', 4, 'Amarelo')
 
-console.log(labrador)
+
+
+
