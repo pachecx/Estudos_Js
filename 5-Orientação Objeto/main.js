@@ -221,18 +221,146 @@ class Car{
             console.log('Ligado')
         }
     }
+
+    get getportas(){
+        return this.portas
+    }
+
+    set setportas(portas){
+        this.portas = portas;
+    }
 }
 
-Car.prototype.bancos = 5;
+// Car.prototype.bancos = 5;
 
-let truck = new Car("v12", 4, 6)
+// let truck = new Car("v12", 4, 6)
 
-console.log(truck);
-truck.ligar()
+// console.log(truck);
+// truck.ligar()
 
-console.log(truck.bancos);
+//console.log(truck.bancos);
+
+let car2 = new Car('2', 0);
+console.log(car2);
+
+car2.setportas = 10;
+console.log(car2);
+console.log(car2.getportas);
+
+
+class Mamifero {
+    constructor(patas){
+        this.patas = patas;
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas, raca){
+        super(patas, patas);
+        this.raca = raca;
+    }
+
+    latir(){
+        console.log('Auau')
+    }
+}
+
+
+console.log(new Lobo instanceof Mamifero);
+
+//Exercicios
+
+//01
+class Banco {
+    constructor(saldo){
+        this.saldo = saldo;
+    }
+
+    deposito(valor){
+        this.saldo += valor;
+    }
+
+    saque(valor){
+        this.saldo -= valor;
+    }
+}
+
+let conta = new Banco(1000);
+
+conta.deposito(1000);
+console.log(conta.saldo);
+
+conta.saque(1500);
+console.log(conta.saldo)
+
+//02
+class Loja {
+    constructor(item, valor, qnt){
+        this.item = item;
+        this.valor = valor;
+        this.qnt = qnt;
+    }
+
+}
 
 
 
+//03
+class Endereco {
+    constructor(rua, bairro, cidade, estado){
+        this.rua = rua;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+    }
 
+    set novaRua(novaRua){
+        this.rua = novaRua;
+    }
 
+    set novoBairro(novoBairro){
+        this.bairro = novoBairro;
+    }
+
+    set novaCidade(novaCidade){
+        this.cidade = novaCidade;
+    }
+
+    set novoEstado(novoEstado){
+        this.estado = novoEstado;
+    }
+}
+
+let endereco = new Endereco("Rua Doze", "Panela", "Foice Cega", "Fim da Linha")
+console.log(endereco);
+
+endereco.novaRua = "Rua 23";
+console.log(endereco);
+
+endereco.novaRua = "Rua PraCima";
+endereco.novoBairro = "Cidadela";
+endereco.novaCidade = "bolaQuadrada";
+endereco.novoEstado = "Torto";
+
+console.log(endereco);
+
+//04
+
+class Gas {
+    constructor(marca, cor, gasolina){
+        this.marca = marca;
+        this.cor = cor;
+        this.gasolina = gasolina;
+    }
+
+    dirigir(){
+        console.log("Dirigindo!")
+    }
+}
+
+let gas = new Gas("Mercedez", "preto", 5);
+
+console.log(gas);
+gas.dirigir();
+
+//05
