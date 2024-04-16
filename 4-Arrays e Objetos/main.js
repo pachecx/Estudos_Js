@@ -274,416 +274,442 @@
 // console.log(car instanceof Object)
 // console.log(car instanceof String)
 
-let object = {
-    name: 'teste1',
-    age: 25
-}
-let object2 = {
-    last: 'teste3',
-    job: "developer"
-}
-console.log(Object.assign(object, object2));
+// let object = {
+//     name: 'teste1',
+//     age: 25
+// }
+// let object2 = {
+//     last: 'teste3',
+//     job: "developer"
+// }
+// console.log(Object.assign(object, object2));
 
-let celular1 = {
-    chip: 1.8,
-    display: 'led'
+// let celular1 = {
+//     chip: 1.8,
+//     display: 'led'
+// }
+
+// let celular2 = {
+//     bateria: 5000,
+//     carregador: 120
+// }
+// console.log(Object.assign(celular1, celular2));
+
+// let ar = ['a', 'b', 'c', 'd', 'e']
+// for(let i = 0; i <= ar.length; i++){
+//     console.log(ar[i])
+// };
+
+// let ar2 = [1, 2, 3, 4, 5]
+// for(let i = 0; i <= ar.length; i++){
+//     console.log(ar2[i])
+// }
+
+// let testePop = [22,33, 44, 55]
+// console.log(testePop.pop()) //mostra apenas o elemento removido
+
+// let tes = testePop;
+// console.log(tes);
+
+// let testePush = ['a', 'b', 'c', 'd'] //Adicionando ao final
+// testePush.push(999);
+// console.log(testePush);
+// testePush.push(555, 23, 743, "ABC")
+// console.log(testePush);
+
+// //SHIFT E UNSHIFT
+
+// let testeShift = [1, 2, 3]
+// testeShift.shift()
+// console.log(testeShift);
+
+// testeShift.unshift(55, 66, 999)
+// console.log(testeShift);
+
+// //INDEXOF LASTiNDEXOF
+// let nome = 'matheus'
+// console.log(nome.indexOf('s')); // Encontrar o indice
+// console.log(nome.indexOf('m'));
+// console.log(nome.indexOf('p'));
+
+// console.log(nome.lastIndexOf('m'));
+
+// //Slice
+// let slice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(slice1);
+
+// let slice2 = slice1.slice(1, 4);
+// console.log(slice2);
+
+// let testeSlice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let testeSlice2 = testeSlice1.slice(3)
+
+// console.log(testeSlice2);
+
+// //ForEach
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+
+// nums.forEach(num => {
+//     console.log(`Numero: ${num}`)
+// });
+
+// let nomes = ['Matheus', 'Maria', 'jose', 'Pedro', 'Isaias', 'Moises', 'Jaco']
+
+// nomes.forEach(nome =>{
+//     console.log(`O nome é: ${nome}.`)
+// });
+
+// let mostrar = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+// mostrar.forEach(carro =>{
+//     console.log(`Os carros são: ${carro}`)
+// })
+
+// //INCLUDES
+// //Procurar um elemento no array
+
+// //VAI RETORNAR TRUE OU FALSE
+
+// let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+// console.log(mostrarIncludes.includes("celta"));
+// console.log(mostrarIncludes.includes("atego"));
+
+// //REVERSE
+// let testeReverse = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let mostrarReverse = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+
+// console.log(testeReverse.reverse());
+// console.log(mostrarReverse.reverse());
+
+// //TRIM
+// //REMOVER OS ESPAÇOS DA STRING
+// let testeTrim = '         Matheus         Pacheco';
+// console.log(testeTrim);
+
+// console.log(testeTrim.trim());
+
+// //PadSTART
+// let testePad = '25';
+// console.log(testePad.padStart(14, "0"));
+// let testePad2 = '100';
+// console.log(testePad2.padStart(5, "0"));
+// let testePad3 = '99';
+// console.log(testePad3.padStart(10, 0));
+
+// //SPLIT
+// let frase = 'O rato roeu a roupa do rei de roma';
+// console.log(frase.split(" "))
+
+// let name2 = 'Matheus';
+// console.log(name2.split(''));
+
+// //JOIN
+// let testeJoin = ['M', 'a', 't', 'h', 'e', 'u', 's']
+// console.log(testeJoin.join(""));
+
+// //REPEAT
+// let testeRepetir = 'Repetir ';
+
+// console.log(testeRepetir.repeat(15));
+// console.log(name2.repeat(10));
+
+// //REST OPERATOR
+// function restTeste(...args){
+//     for(let i = 0; i <= args.length; i++){
+//         console.log(args[i])
+//     }
+// }
+
+// restTeste(10, 5, 15, 20);
+
+// //Destruturing
+// //Separar as propriedades em variaveis
+
+// let car = {
+//     nome: 'hb20',
+//     motor: '1.0',
+//     portas: '4'
+// }
+// console.log(car);
+
+// const {nome: hb20, motor: vMotor, portas:vPortas} = car;
+// console.log(hb20);
+// console.log(vMotor);
+// console.log(vPortas);
+
+// let aluno = {
+//     nome: 'Matheus',
+//     idade: 29,
+//     job: 'developer'
+// }
+
+// console.log(aluno);
+
+// const {nome: matheus, idade: vIdade, job: developer } = aluno;
+// console.log(matheus);
+// console.log(vIdade);
+// console.log(developer);
+
+// let got = {
+//     nome: 'godOfWar',
+//     ano: 2018,
+//     plataforma: 'ps5'
+// }
+// console.log(got);
+
+// const {nome: godOfWar, ano: Vano, plataforma: ps5} = got;
+// console.log(godOfWar);
+// console.log(Vano);
+// console.log(ps5);
+
+// let desArray = ['a', 'b', 'c', 'd', 'e']
+// console.log(desArray);
+
+// const [letra1, letra2, letra3, letra4, letra5] = desArray;
+// console.log(letra1);
+// console.log(letra2);
+// console.log(letra3);
+// console.log(letra4);
+// console.log(letra5);
+
+// let persons = ['matheus', 'joao', 'pedro', 'moises'];
+// console.log(persons);
+
+// const [nome1, nome2, nome3, nome4] = persons;
+// console.log(nome1);
+// console.log(nome2);
+// console.log(nome3);
+// console.log(nome4);
+
+// let games = ['God of War', 'GranTurismo', 'The last of Us']
+// const [game1, game2, game3] = games
+// console.log(game1);
+// console.log(game2);
+// console.log(game3);
+
+// let gameObj = {
+//     nome: 'theLastOfUs',
+//     plataforma: 'ps5',
+//     ano: 2013
+// }
+
+// const {nome: theLastOfUs, plataforma: Vrps5, ano: Vrano} = gameObj;
+// console.log(theLastOfUs);
+// console.log(Vrps5);
+// console.log(Vrano);
+
+// let json1 = {
+//     "name": "Matheus",
+//     "age": 29,
+//     "job": "developer"
+// }
+
+// let pessoa = {
+//     "game": "fifa",
+//     "ano": 2007,
+//     "tipo": "futebol"
+// }
+
+// let arJson = {
+//     "marca": "lg",
+//     "ano": 2024,
+//     "modelo": "inverter"
+// }
+
+// let JsonString = JSON.stringify(json1);
+// console.log(JsonString);
+
+// let stringJson = JSON.parse(JsonString);
+// console.log(stringJson);
+
+// let obj3 = {
+//     name: 'matheus',
+//     age: 29,
+//     job: 'developer',
+//     wage: 10000
+// }
+// console.log(obj3)
+
+// let {name: vname, age: age, job: job, wage: wage} = obj3
+// console.log(vname);
+// console.log(age);
+// console.log(job);
+// console.log(wage);
+
+
+// //Exercicios
+
+// //01
+// let arr1 = ['Manga', 'pera', 'banana', 'melão', 'melançia'];
+// console.log(arr1[1]);
+// console.log(arr1[3]);
+// console.log(arr1[4]);
+
+// //02
+// let teste01 = [1, 2, 3];
+// let teste02 = ['a', 'b', 'c', 'd'];
+
+// console.log(teste01.length);
+// console.log(teste02.length);
+
+// //03
+// let onibus = {
+//     rodas: 8,
+//     limite: 40,
+//     portas: 2
+// }
+
+// console.log(onibus);
+
+// console.log(onibus.rodas);
+// console.log(onibus.limite);
+// console.log(onibus.portas);
+
+// //04
+// onibus.janelas = 20;
+// delete onibus.rodas;
+
+// console.log(onibus.janelas);
+// console.log(onibus.rodas); //deletado
+
+// //05
+// let meuNome = ['Matheus', 'Joao', 'Pedro'];
+
+// // for(let i = 0; i <= meuNome.length; i++){
+// //     if(meuNome[i] === 'Matheus'){
+// //         console.log('Possui meu nome!')
+// //         console.log(meuNome[i])
+// //     }
+   
+// // }
+
+// // if(meuNome.includes('Matheus') === true){
+// //     console.log('Possui')
+// // }else{
+// //     console.log('Não ')
+// // }
+
+// if(meuNome.includes('Matheus')){
+//     console.log('Nome encontrado!')
+// }else{
+//     console.log('Nome não encontrado!')
+// }
+
+// //06
+// let vitamina1 = ['maçã', 'banana', 'manga', 'uva', 'melancia', 'kiwi'];
+// let vitamina2 = ['abacaxi', 'morango', 'pera'];
+
+// function fazerVitamina(){
+//     if(vitamina1.length < 5){
+//         console.log('Poucos elementos')
+//     }else{
+//         console.log('Muitos elementos!')
+//     }
+// }
+
+// fazerVitamina();
+
+// //07
+// let testeloop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+// for(let i = 0; i <= testeloop.length; i++){
+//     console.log(testeloop[i])
+// }
+
+// //08
+// let exJson = {
+//     "name": "matheus",
+//     "lastName": "pacheco cruz",
+//     "age": 29
+// }
+// console.log(exJson.name);
+// console.log(exJson.lastName);
+// console.log(exJson.age);
+
+// //09
+// let text = 'Seja fiel a te mesmo';
+// let text1 = text.split(" ");
+
+// for(let i = 0; i <= text1.length; i++ ){
+//     console.log(text1[i])
+// }
+
+// //10
+// let cal = {
+//     soma: function(num1, num2){
+//         let result = num1 + num2
+//         return result
+//     },
+
+//     sub: function(num1, num2){
+//         let result = num1 - num2
+//         return result
+//     },
+
+//     mult: function(num1, num2){
+//         let result = num1 * num2
+//         return result
+//     },
+
+//     div: function(num1, num2){
+//         let result = num1 / num2
+//         return result
+//     }
+// }
+
+// console.log(cal.soma(5, 2));
+// console.log(cal.sub(5, 2));
+// console.log(cal.mult(5, 2));
+// console.log(cal.div(5, 2));
+
+// //11
+// const arr2 = [1, 2, 3, 4]
+// let qty = ['geleia', 'pamonha', 'milho', 'tofu']
+// let el = qty.length;
+
+// console.log(arr2.length);
+// console.log(qty.length);
+// console.log(el);
+
+// //12
+// const arr = []
+// for(let i = 0; i < 5; i++){
+//     arr.push(i + 5);
+// }
+
+// console.log(arr)
+
+//Assing
+let carro = {
+    porta: 4,
+    pneus: 4,
+    portamala: 1
 }
 
-let celular2 = {
-    bateria: 5000,
-    carregador: 120
+let carro2 = {
+    tetoSolar: 1,
 }
-console.log(Object.assign(celular1, celular2));
 
-let ar = ['a', 'b', 'c', 'd', 'e']
-for(let i = 0; i <= ar.length; i++){
-    console.log(ar[i])
+let carro3 = {
+    arCondicionado: 1,
+}
+
+Object.assign(carro, carro2, carro3);
+console.log(carro);
+
+let chaves = {
+    'chave1': 1,
+    'chave2': 2,
+    'chave3': 3
 };
 
-let ar2 = [1, 2, 3, 4, 5]
-for(let i = 0; i <= ar.length; i++){
-    console.log(ar2[i])
+console.log(chaves);
+console.log(Object.keys(chaves));
+
+let arr = [1, 2, 3, 4, 5, 6];
+
+for(let i = 0; i <= arr.length; i++){
+    console.log(arr[i])
 }
 
-let testePop = [22,33, 44, 55]
-console.log(testePop.pop()) //mostra apenas o elemento removido
-
-let tes = testePop;
-console.log(tes);
-
-let testePush = ['a', 'b', 'c', 'd'] //Adicionando ao final
-testePush.push(999);
-console.log(testePush);
-testePush.push(555, 23, 743, "ABC")
-console.log(testePush);
-
-//SHIFT E UNSHIFT
-
-let testeShift = [1, 2, 3]
-testeShift.shift()
-console.log(testeShift);
-
-testeShift.unshift(55, 66, 999)
-console.log(testeShift);
-
-//INDEXOF LASTiNDEXOF
-let nome = 'matheus'
-console.log(nome.indexOf('s')); // Encontrar o indice
-console.log(nome.indexOf('m'));
-console.log(nome.indexOf('p'));
-
-console.log(nome.lastIndexOf('m'));
-
-//Slice
-let slice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-console.log(slice1);
-
-let slice2 = slice1.slice(1, 4);
-console.log(slice2);
-
-let testeSlice1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let testeSlice2 = testeSlice1.slice(3)
-
-console.log(testeSlice2);
-
-//ForEach
-const nums = [1, 2, 3, 4, 5, 6, 7, 8]
-
-nums.forEach(num => {
-    console.log(`Numero: ${num}`)
-});
-
-let nomes = ['Matheus', 'Maria', 'jose', 'Pedro', 'Isaias', 'Moises', 'Jaco']
-
-nomes.forEach(nome =>{
-    console.log(`O nome é: ${nome}.`)
-});
-
-let mostrar = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
-mostrar.forEach(carro =>{
-    console.log(`Os carros são: ${carro}`)
-})
-
-//INCLUDES
-//Procurar um elemento no array
-
-//VAI RETORNAR TRUE OU FALSE
-
-let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
-console.log(mostrarIncludes.includes("celta"));
-console.log(mostrarIncludes.includes("atego"));
-
-//REVERSE
-let testeReverse = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let mostrarReverse = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
-
-console.log(testeReverse.reverse());
-console.log(mostrarReverse.reverse());
-
-//TRIM
-//REMOVER OS ESPAÇOS DA STRING
-let testeTrim = '         Matheus         Pacheco';
-console.log(testeTrim);
-
-console.log(testeTrim.trim());
-
-//PadSTART
-let testePad = '25';
-console.log(testePad.padStart(14, "0"));
-let testePad2 = '100';
-console.log(testePad2.padStart(5, "0"));
-let testePad3 = '99';
-console.log(testePad3.padStart(10, 0));
-
-//SPLIT
-let frase = 'O rato roeu a roupa do rei de roma';
-console.log(frase.split(" "))
-
-let name2 = 'Matheus';
-console.log(name2.split(''));
-
-//JOIN
-let testeJoin = ['M', 'a', 't', 'h', 'e', 'u', 's']
-console.log(testeJoin.join(""));
-
-//REPEAT
-let testeRepetir = 'Repetir ';
-
-console.log(testeRepetir.repeat(15));
-console.log(name2.repeat(10));
-
-//REST OPERATOR
-function restTeste(...args){
-    for(let i = 0; i <= args.length; i++){
-        console.log(args[i])
-    }
-}
-
-restTeste(10, 5, 15, 20);
-
-//Destruturing
-//Separar as propriedades em variaveis
-
-let car = {
-    nome: 'hb20',
-    motor: '1.0',
-    portas: '4'
-}
-console.log(car);
-
-const {nome: hb20, motor: vMotor, portas:vPortas} = car;
-console.log(hb20);
-console.log(vMotor);
-console.log(vPortas);
-
-let aluno = {
-    nome: 'Matheus',
-    idade: 29,
-    job: 'developer'
-}
-
-console.log(aluno);
-
-const {nome: matheus, idade: vIdade, job: developer } = aluno;
-console.log(matheus);
-console.log(vIdade);
-console.log(developer);
-
-let got = {
-    nome: 'godOfWar',
-    ano: 2018,
-    plataforma: 'ps5'
-}
-console.log(got);
-
-const {nome: godOfWar, ano: Vano, plataforma: ps5} = got;
-console.log(godOfWar);
-console.log(Vano);
-console.log(ps5);
-
-let desArray = ['a', 'b', 'c', 'd', 'e']
-console.log(desArray);
-
-const [letra1, letra2, letra3, letra4, letra5] = desArray;
-console.log(letra1);
-console.log(letra2);
-console.log(letra3);
-console.log(letra4);
-console.log(letra5);
-
-let persons = ['matheus', 'joao', 'pedro', 'moises'];
-console.log(persons);
-
-const [nome1, nome2, nome3, nome4] = persons;
-console.log(nome1);
-console.log(nome2);
-console.log(nome3);
-console.log(nome4);
-
-let games = ['God of War', 'GranTurismo', 'The last of Us']
-const [game1, game2, game3] = games
-console.log(game1);
-console.log(game2);
-console.log(game3);
-
-let gameObj = {
-    nome: 'theLastOfUs',
-    plataforma: 'ps5',
-    ano: 2013
-}
-
-const {nome: theLastOfUs, plataforma: Vrps5, ano: Vrano} = gameObj;
-console.log(theLastOfUs);
-console.log(Vrps5);
-console.log(Vrano);
-
-let json1 = {
-    "name": "Matheus",
-    "age": 29,
-    "job": "developer"
-}
-
-let pessoa = {
-    "game": "fifa",
-    "ano": 2007,
-    "tipo": "futebol"
-}
-
-let arJson = {
-    "marca": "lg",
-    "ano": 2024,
-    "modelo": "inverter"
-}
-
-let JsonString = JSON.stringify(json1);
-console.log(JsonString);
-
-let stringJson = JSON.parse(JsonString);
-console.log(stringJson);
-
-let obj3 = {
-    name: 'matheus',
-    age: 29,
-    job: 'developer',
-    wage: 10000
-}
-console.log(obj3)
-
-let {name: vname, age: age, job: job, wage: wage} = obj3
-console.log(vname);
-console.log(age);
-console.log(job);
-console.log(wage);
-
-
-//Exercicios
-
-//01
-let arr1 = ['Manga', 'pera', 'banana', 'melão', 'melançia'];
-console.log(arr1[1]);
-console.log(arr1[3]);
-console.log(arr1[4]);
-
-//02
-let teste01 = [1, 2, 3];
-let teste02 = ['a', 'b', 'c', 'd'];
-
-console.log(teste01.length);
-console.log(teste02.length);
-
-//03
-let onibus = {
-    rodas: 8,
-    limite: 40,
-    portas: 2
-}
-
-console.log(onibus);
-
-console.log(onibus.rodas);
-console.log(onibus.limite);
-console.log(onibus.portas);
-
-//04
-onibus.janelas = 20;
-delete onibus.rodas;
-
-console.log(onibus.janelas);
-console.log(onibus.rodas); //deletado
-
-//05
-let meuNome = ['Matheus', 'Joao', 'Pedro'];
-
-// for(let i = 0; i <= meuNome.length; i++){
-//     if(meuNome[i] === 'Matheus'){
-//         console.log('Possui meu nome!')
-//         console.log(meuNome[i])
-//     }
-   
-// }
-
-// if(meuNome.includes('Matheus') === true){
-//     console.log('Possui')
-// }else{
-//     console.log('Não ')
-// }
-
-if(meuNome.includes('Matheus')){
-    console.log('Nome encontrado!')
-}else{
-    console.log('Nome não encontrado!')
-}
-
-//06
-let vitamina1 = ['maçã', 'banana', 'manga', 'uva', 'melancia', 'kiwi'];
-let vitamina2 = ['abacaxi', 'morango', 'pera'];
-
-function fazerVitamina(){
-    if(vitamina1.length < 5){
-        console.log('Poucos elementos')
-    }else{
-        console.log('Muitos elementos!')
-    }
-}
-
-fazerVitamina();
-
-//07
-let testeloop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-
-for(let i = 0; i <= testeloop.length; i++){
-    console.log(testeloop[i])
-}
-
-//08
-let exJson = {
-    "name": "matheus",
-    "lastName": "pacheco cruz",
-    "age": 29
-}
-console.log(exJson.name);
-console.log(exJson.lastName);
-console.log(exJson.age);
-
-//09
-let text = 'Seja fiel a te mesmo';
-let text1 = text.split(" ");
-
-for(let i = 0; i <= text1.length; i++ ){
-    console.log(text1[i])
-}
-
-//10
-let cal = {
-    soma: function(num1, num2){
-        let result = num1 + num2
-        return result
-    },
-
-    sub: function(num1, num2){
-        let result = num1 - num2
-        return result
-    },
-
-    mult: function(num1, num2){
-        let result = num1 * num2
-        return result
-    },
-
-    div: function(num1, num2){
-        let result = num1 / num2
-        return result
-    }
-}
-
-console.log(cal.soma(5, 2));
-console.log(cal.sub(5, 2));
-console.log(cal.mult(5, 2));
-console.log(cal.div(5, 2));
-
-//11
-const arr2 = [1, 2, 3, 4]
-let qty = ['geleia', 'pamonha', 'milho', 'tofu']
-let el = qty.length;
-
-console.log(arr2.length);
-console.log(qty.length);
-console.log(el);
-
-//12
-const arr = []
-for(let i = 0; i < 5; i++){
-    arr.push(i + 5);
-}
-
-console.log(arr)
-
-//13
-
-
-//14
-
-
-//15
 
 
