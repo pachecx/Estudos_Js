@@ -60,7 +60,6 @@
 
 // console.log(Object.entries(obj2)) //Obter chave e valor
 
-
 // //Mutação
 // const a = {
 //     name: 'matheus'
@@ -85,7 +84,7 @@
 // //Push e Pop
 // const p = ['a', 'b', 'c', 'd'];
 // const O = [1, 2, 3, 4, 5];
-// p.push(55, 66, 100, 'Cem');   //Adiciona no final 
+// p.push(55, 66, 100, 'Cem');   //Adiciona no final
 // console.log(p);
 
 // O.pop()  //Remove o ultimo
@@ -101,9 +100,8 @@
 // X.shift()
 // console.log(X)
 
-// //IndexOf LastIndexOF 
+// //IndexOf LastIndexOF
 // const M = ['a', 'b', 'c', 'd', 'Z']
-
 
 // console.log(M.indexOf('Z'))
 // console.log(M.lastIndexOf('a'))
@@ -152,7 +150,7 @@
 // console.log(P.padEnd(4,'00'))
 
 // //Split
-// const stri = 'futuramente' 
+// const stri = 'futuramente'
 // console.log(stri.split(''))
 
 // //Join
@@ -194,7 +192,7 @@
 //     firstName: 'Matheus',
 //     lastName: 'Pacheco',
 //     job: 'Developer'
-// } 
+// }
 
 // console.log(userDetails.firstName)
 // const {firstName, lastName, job} = userDetails //Criando variaveis para cada propriedade
@@ -213,7 +211,7 @@
 // console.log(modelo, marca, ano)
 
 // const { modelo: tipo, marca: fabricante, ano: fabricacao } = buyCar //Renomenado variaveis
-// console.log(tipo, fabricante, fabricacao) 
+// console.log(tipo, fabricante, fabricacao)
 
 // //Destructuring em Arrays
 // const Ar = ['A', 'B', 'C', 'D', 'E']
@@ -230,12 +228,12 @@
 // const num = [5, 6, 7, 8]
 
 // console.log( all = ar.concat(num)) //concat vai juntar os dois arrays
- 
+
 // const text = 'algum texto';
 
 // console.log(text.indexOf('a')) //Encontra a posição de um caractere
-// console.log(text.indexOf('l')) 
-// console.log(text.indexOf('g')) 
+// console.log(text.indexOf('l'))
+// console.log(text.indexOf('g'))
 
 // //OBJETOS
 // const person = {
@@ -359,7 +357,7 @@
 //     console.log(`O nome é: ${nome}.`)
 // });
 
-// let mostrar = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+// let mostrar = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline']
 // mostrar.forEach(carro =>{
 //     console.log(`Os carros são: ${carro}`)
 // })
@@ -369,13 +367,13 @@
 
 // //VAI RETORNAR TRUE OU FALSE
 
-// let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+// let mostrarIncludes = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline']
 // console.log(mostrarIncludes.includes("celta"));
 // console.log(mostrarIncludes.includes("atego"));
 
 // //REVERSE
 // let testeReverse = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let mostrarReverse = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline'] 
+// let mostrarReverse = ['hb20', 'celta', 'hillux', 'motana', 'supra', 'skyline']
 
 // console.log(testeReverse.reverse());
 // console.log(mostrarReverse.reverse());
@@ -535,7 +533,6 @@
 // console.log(job);
 // console.log(wage);
 
-
 // //Exercicios
 
 // //01
@@ -579,7 +576,7 @@
 // //         console.log('Possui meu nome!')
 // //         console.log(meuNome[i])
 // //     }
-   
+
 // // }
 
 // // if(meuNome.includes('Matheus') === true){
@@ -680,26 +677,26 @@
 
 //Assing
 let carro = {
-    porta: 4,
-    pneus: 4,
-    portamala: 1
-}
+  porta: 4,
+  pneus: 4,
+  portamala: 1,
+};
 
 let carro2 = {
-    tetoSolar: 1,
-}
+  tetoSolar: 1,
+};
 
 let carro3 = {
-    arCondicionado: 1,
-}
+  arCondicionado: 1,
+};
 
 Object.assign(carro, carro2, carro3);
 console.log(carro);
 
 let chaves = {
-    'chave1': 1,
-    'chave2': 2,
-    'chave3': 3
+  chave1: 1,
+  chave2: 2,
+  chave3: 3,
 };
 
 console.log(chaves);
@@ -707,9 +704,27 @@ console.log(Object.keys(chaves));
 
 let arr = [1, 2, 3, 4, 5, 6];
 
-for(let i = 0; i <= arr.length; i++){
-    console.log(arr[i])
+for (let i = 0; i <= arr.length; i++) {
+  console.log(arr[i]);
 }
 
+let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(ar.slice(3, 6));
 
+let For = [1, 2, 3, 4, 5, 6];
 
+For.forEach((fo) => {
+  console.log(fo);
+});
+
+let abc = ["a", "b", "c", "d", "e", "f", "g"];
+
+abc.forEach((ab) => {
+  console.log(ab);
+});
+
+let fruta = ["banama", "uva", "pera", "melancia", "morango"];
+
+fruta.forEach(fru => {
+   console.log(fru) 
+});
